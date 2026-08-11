@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+  color: black;           /* light mode default */
+}
+
+.dark body {
+  background-color: #111111;  /* darkbg */
+  color: white;
+}
+
+body {
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+}
